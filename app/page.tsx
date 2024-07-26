@@ -6,26 +6,26 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
-      <header className="bg-gray-800 px-4 lg:px-6 h-14 flex items-center border-b border-gray-700">
+    <div className="flex flex-col min-h-screen bg-black text-gray-200">
+      <header className="bg-black px-4 lg:px-6 h-14 flex items-center border-b border-gray-800">
         <Link href="#" className="flex items-center justify-center">
-          <CameraIcon className="h-6 w-6 text-gray-100" />
+          <CameraIcon className="h-6 w-6 text-gray-200" />
           <span className="sr-only">Photography Portfolio</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
             href="#"
-            className="text-sm font-medium hover:underline underline-offset-4">
+            className="text-sm font-medium hover:text-white hover:underline underline-offset-4">
             Portfolio
           </Link>
           <Link
             href="#"
-            className="text-sm font-medium hover:underline underline-offset-4">
+            className="text-sm font-medium hover:text-white hover:underline underline-offset-4">
             About
           </Link>
           <Link
             href="#"
-            className="text-sm font-medium hover:underline underline-offset-4">
+            className="text-sm font-medium hover:text-white hover:underline underline-offset-4">
             Contact
           </Link>
         </nav>
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="container space-y-10 xl:space-y-16">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
                   Capturing the Extraordinary
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
@@ -47,12 +47,12 @@ export default function Home() {
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md bg-gray-100 px-8 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-gray-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-700 disabled:pointer-events-none disabled:opacity-50">
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-black shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 disabled:pointer-events-none disabled:opacity-50">
                   View Portfolio
                 </Link>
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-700 bg-gray-800 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-700 disabled:pointer-events-none disabled:opacity-50">
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-700 bg-black px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-900 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 disabled:pointer-events-none disabled:opacity-50">
                   Contact Me
                 </Link>
               </div>
@@ -75,10 +75,10 @@ export default function Home() {
 
         <section
           id="about"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-900">
           <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-white">
                 About the Photographer
               </h2>
               <p className="max-w-[600px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -101,7 +101,7 @@ export default function Home() {
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -114,20 +114,20 @@ export default function Home() {
               <Input
                 type="text"
                 placeholder="Name"
-                className="w-full bg-gray-800 border-gray-700"
+                className="w-full bg-gray-900 border-gray-700 text-white placeholder-gray-500"
               />
               <Input
                 type="email"
                 placeholder="Email"
-                className="w-full bg-gray-800 border-gray-700"
+                className="w-full bg-gray-900 border-gray-700 text-white placeholder-gray-500"
               />
               <Textarea
                 placeholder="Message"
-                className="w-full bg-gray-800 border-gray-700"
+                className="w-full bg-gray-900 border-gray-700 text-white placeholder-gray-500"
               />
               <Button
                 type="submit"
-                className="w-full bg-gray-100 text-gray-900 hover:bg-gray-300">
+                className="w-full bg-white text-black hover:bg-gray-200">
                 Submit
               </Button>
             </form>
@@ -135,65 +135,65 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-gray-800 p-6 md:py-12 w-full">
+      <footer className="bg-gray-900 p-6 md:py-12 w-full">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
-            <h3 className="font-semibold">About</h3>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <h3 className="font-semibold text-white">About</h3>
+            <Link href="#" className="text-gray-400 hover:text-white">
               Biography
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Style
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Awards
             </Link>
           </div>
           <div className="grid gap-1">
-            <h3 className="font-semibold">Portfolio</h3>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <h3 className="font-semibold text-white">Portfolio</h3>
+            <Link href="#" className="text-gray-400 hover:text-white">
               Landscapes
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Portraits
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Lifestyle
             </Link>
           </div>
           <div className="grid gap-1">
-            <h3 className="font-semibold">Services</h3>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <h3 className="font-semibold text-white">Services</h3>
+            <Link href="#" className="text-gray-400 hover:text-white">
               Commercial
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Editorial
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Events
             </Link>
           </div>
           <div className="grid gap-1">
-            <h3 className="font-semibold">Legal</h3>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <h3 className="font-semibold text-white">Legal</h3>
+            <Link href="#" className="text-gray-400 hover:text-white">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Terms of Service
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Cookie Policy
             </Link>
           </div>
           <div className="grid gap-1">
-            <h3 className="font-semibold">Contact</h3>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <h3 className="font-semibold text-white">Contact</h3>
+            <Link href="#" className="text-gray-400 hover:text-white">
               Email
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Phone
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-gray-100">
+            <Link href="#" className="text-gray-400 hover:text-white">
               Social Media
             </Link>
           </div>

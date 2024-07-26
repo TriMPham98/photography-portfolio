@@ -40,7 +40,7 @@ export default function Home() {
                   Capturing the Extraordinary
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
-                  Explore the stunning photography portfolio of John Doe, a
+                  Explore the stunning photography portfolio of Tri Pham, a
                   master of light and composition.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function Home() {
                 About the Photographer
               </h2>
               <p className="max-w-[600px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                John Doe is a renowned photographer with over 10 years of
+                Tri Pham is a renowned photographer with over 3 years of
                 experience in the industry. His unique style and eye for detail
                 have earned him a reputation for creating stunning, captivating
                 images that tell a story.

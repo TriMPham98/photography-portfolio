@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-black text-gray-200">
+    <div className="flex flex-col min-h-screen bg-black text-gray-300">
       <header className="bg-black px-4 lg:px-6 h-14 flex items-center border-b border-gray-800">
         <Link href="#" className="flex items-center justify-center">
-          <CameraIcon className="h-6 w-6 text-gray-200" />
+          <CameraIcon className="h-6 w-6 text-gray-300" />
           <span className="sr-only">Photography Portfolio</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -52,7 +52,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-700 bg-black px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-900 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 disabled:pointer-events-none disabled:opacity-50">
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-700 bg-gray-900 px-8 text-sm font-medium text-gray-300 shadow-sm transition-colors hover:bg-gray-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 disabled:pointer-events-none disabled:opacity-50">
                   Contact Me
                 </Link>
               </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
         <section
           id="about"
-          className="w-full py-12 md:py-24 lg:py-32 bg-gray-900">
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-950">
           <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-white">
@@ -114,16 +114,16 @@ export default function Home() {
               <Input
                 type="text"
                 placeholder="Name"
-                className="w-full bg-gray-900 border-gray-700 text-white placeholder-gray-500"
+                className="w-full bg-gray-900 border-gray-800 text-gray-300 placeholder-gray-500"
               />
               <Input
                 type="email"
                 placeholder="Email"
-                className="w-full bg-gray-900 border-gray-700 text-white placeholder-gray-500"
+                className="w-full bg-gray-900 border-gray-800 text-gray-300 placeholder-gray-500"
               />
               <Textarea
                 placeholder="Message"
-                className="w-full bg-gray-900 border-gray-700 text-white placeholder-gray-500"
+                className="w-full bg-gray-900 border-gray-800 text-gray-300 placeholder-gray-500"
               />
               <Button
                 type="submit"
@@ -135,7 +135,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-gray-900 p-6 md:py-12 w-full">
+      <footer className="bg-gray-950 p-6 md:py-12 w-full">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
             <h3 className="font-semibold text-white">About</h3>

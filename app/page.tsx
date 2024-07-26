@@ -95,13 +95,16 @@ export default function Home() {
                 images that tell a story.
               </p>
             </div>
-            <Image
-              src="/images/photographer.jpg"
-              width={600}
-              height={400}
-              alt="Photographer John Doe"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-            />
+            <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/images/photographer.jpg"
+                layout="fill"
+                objectFit="contain"
+                objectPosition="center"
+                alt="Photographer John Doe with guitar"
+                className="rounded-xl"
+              />
+            </div>
           </div>
         </section>
 

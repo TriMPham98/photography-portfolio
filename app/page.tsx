@@ -33,7 +33,6 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="w-full pt-12 md:pt-24 lg:pt-32 pb-12 md:pb-32 lg:pb-32">
-          {" "}
           <div className="container space-y-10 xl:space-y-16">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
@@ -59,15 +58,22 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {[1, 2, 3, 4, 5, 6].map((index) => (
+              {[
+                "/images/portfolio1.jpg",
+                "/images/portfolio2.jpg",
+                "/images/portfolio3.jpg",
+                "/images/portfolio4.jpg",
+                "/images/portfolio5.jpg",
+                "/images/portfolio6.jpg",
+              ].map((src, index) => (
                 <Image
                   key={index}
-                  src="/placeholder.svg"
+                  src={src}
                   width={600}
                   height={400}
-                  alt={`Portfolio Image ${index}`}
+                  alt={`Portfolio Image ${index + 1}`}
                   className="object-cover aspect-[3/2] rounded-lg"
-                  priority={index === 1}
+                  priority={index === 0}
                 />
               ))}
             </div>
@@ -90,10 +96,10 @@ export default function Home() {
               </p>
             </div>
             <Image
-              src="/placeholder.svg"
+              src="/images/photographer.jpg"
               width={600}
               height={400}
-              alt="Photographer"
+              alt="Photographer John Doe"
               className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
             />
           </div>

@@ -32,7 +32,8 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section className="w-full pt-12 md:pt-24 lg:pt-32">
+        <section className="w-full pt-12 md:pt-24 lg:pt-32 pb-12 md:pb-32 lg:pb-32">
+          {" "}
           <div className="container space-y-10 xl:space-y-16">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">

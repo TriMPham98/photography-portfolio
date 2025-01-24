@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -20,15 +23,30 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-5xl md:text-7xl font-bold mb-4">
             Capturing Moments
-          </h1>
-          <p className="text-xl md:text-2xl mb-8">Photography Portfolio</p>
-          <Link
-            href="#gallery"
-            className="inline-block bg-white text-gray-900 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors">
-            View Gallery
-          </Link>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xl md:text-2xl mb-8">
+            Photography Portfolio
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}>
+            <Link
+              href="#gallery"
+              className="inline-block bg-white text-gray-900 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors">
+              View Gallery
+            </Link>
+          </motion.div>
         </div>
       </section>
 

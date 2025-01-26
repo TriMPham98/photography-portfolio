@@ -11,11 +11,11 @@ export default function Navigation() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md">
+    <nav className="fixed w-full z-50 bg-black/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold text-white">
             Portfolio
           </Link>
 
@@ -25,8 +25,8 @@ export default function Navigation() {
               href="/"
               className={`${
                 isActive("/")
-                  ? "text-blue-500"
-                  : "hover:text-blue-500 transition-colors"
+                  ? "text-white"
+                  : "text-gray-400 hover:text-white transition-colors"
               }`}>
               Home
             </Link>
@@ -34,8 +34,8 @@ export default function Navigation() {
               href="/gallery"
               className={`${
                 isActive("/gallery")
-                  ? "text-blue-500"
-                  : "hover:text-blue-500 transition-colors"
+                  ? "text-white"
+                  : "text-gray-400 hover:text-white transition-colors"
               }`}>
               Gallery
             </Link>
@@ -43,8 +43,8 @@ export default function Navigation() {
               href="/about"
               className={`${
                 isActive("/about")
-                  ? "text-blue-500"
-                  : "hover:text-blue-500 transition-colors"
+                  ? "text-white"
+                  : "text-gray-400 hover:text-white transition-colors"
               }`}>
               About
             </Link>
@@ -52,8 +52,8 @@ export default function Navigation() {
               href="/contact"
               className={`${
                 isActive("/contact")
-                  ? "text-blue-500"
-                  : "hover:text-blue-500 transition-colors"
+                  ? "text-white"
+                  : "text-gray-400 hover:text-white transition-colors"
               }`}>
               Contact
             </Link>
@@ -61,7 +61,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu">
             <svg
@@ -89,8 +89,8 @@ export default function Navigation() {
                 href="/"
                 className={`block px-3 py-2 rounded-md ${
                   isActive("/")
-                    ? "bg-blue-500 text-white"
-                    : "hover:bg-blue-500 hover:text-white transition-colors"
+                    ? "bg-white/10 text-white"
+                    : "text-gray-400 hover:bg-white/10 hover:text-white transition-colors"
                 }`}
                 onClick={() => setIsMenuOpen(false)}>
                 Home
@@ -99,8 +99,8 @@ export default function Navigation() {
                 href="/gallery"
                 className={`block px-3 py-2 rounded-md ${
                   isActive("/gallery")
-                    ? "bg-blue-500 text-white"
-                    : "hover:bg-blue-500 hover:text-white transition-colors"
+                    ? "bg-white/10 text-white"
+                    : "text-gray-400 hover:bg-white/10 hover:text-white transition-colors"
                 }`}
                 onClick={() => setIsMenuOpen(false)}>
                 Gallery
@@ -109,8 +109,8 @@ export default function Navigation() {
                 href="/about"
                 className={`block px-3 py-2 rounded-md ${
                   isActive("/about")
-                    ? "bg-blue-500 text-white"
-                    : "hover:bg-blue-500 hover:text-white transition-colors"
+                    ? "bg-white/10 text-white"
+                    : "text-gray-400 hover:bg-white/10 hover:text-white transition-colors"
                 }`}
                 onClick={() => setIsMenuOpen(false)}>
                 About
@@ -119,8 +119,8 @@ export default function Navigation() {
                 href="/contact"
                 className={`block px-3 py-2 rounded-md ${
                   isActive("/contact")
-                    ? "bg-blue-500 text-white"
-                    : "hover:bg-blue-500 hover:text-white transition-colors"
+                    ? "bg-white/10 text-white"
+                    : "text-gray-400 hover:bg-white/10 hover:text-white transition-colors"
                 }`}
                 onClick={() => setIsMenuOpen(false)}>
                 Contact

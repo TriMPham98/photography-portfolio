@@ -43,7 +43,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.6 }}>
             <Link
               href="#gallery"
-              className="inline-block bg-white text-gray-900 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors">
+              className="inline-block bg-white/10 text-white px-8 py-3 rounded-full hover:bg-white/20 transition-colors">
               View Gallery
             </Link>
           </motion.div>
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-gray-50 dark:bg-gray-800 py-16">
+      <section className="bg-black py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Get in Touch</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
@@ -84,7 +84,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-8 py-3 rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">
+            className="inline-block bg-white/10 text-white px-8 py-3 rounded-full hover:bg-white/20 transition-colors">
             Contact Me
           </Link>
         </div>

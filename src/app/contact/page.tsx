@@ -21,7 +21,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-800"
+                className="w-full px-4 py-2 border border-white/20 rounded-lg focus:ring-2 focus:ring-white/30 bg-black/50"
                 required
               />
             </div>
@@ -52,7 +52,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 py-3 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">
+              className="w-full bg-white/10 text-white py-3 rounded-lg hover:bg-white/20 transition-colors">
               Send Message
             </button>
           </form>

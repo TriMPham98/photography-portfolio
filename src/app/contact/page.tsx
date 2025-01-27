@@ -94,8 +94,12 @@ export default function Contact() {
                 <a href="#" className="hover:text-blue-500 transition-colors">
                   LinkedIn
                 </a>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Twitter
+                <a
+                  href="https://x.com/PhamTriPhoto"
+                  className="hover:text-blue-500 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  X
                 </a>
               </div>
             </div>

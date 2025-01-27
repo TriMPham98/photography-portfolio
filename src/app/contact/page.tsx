@@ -88,10 +88,18 @@ export default function Contact() {
             <div>
               <h3 className="text-xl font-semibold mb-4">Social Media</h3>
               <div className="flex gap-4">
-                <a href="#" className="hover:text-blue-500 transition-colors">
+                <a
+                  href="https://www.instagram.com/phamtriphoto/"
+                  className="hover:text-blue-500 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   Instagram
                 </a>
-                <a href="#" className="hover:text-blue-500 transition-colors">
+                <a
+                  href="https://www.linkedin.com/in/pham-tri/"
+                  className="hover:text-blue-500 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   LinkedIn
                 </a>
                 <a

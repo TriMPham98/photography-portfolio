@@ -16,7 +16,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold text-white">
-            Portfolio
+            Tri Pham
           </Link>
 
           {/* Desktop Navigation */}

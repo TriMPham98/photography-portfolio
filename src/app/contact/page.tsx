@@ -67,9 +67,9 @@ export default function Contact() {
                 <p className="flex items-center gap-3">
                   <span className="font-medium">Email:</span>
                   <a
-                    href="mailto:your.email@example.com"
+                    href="mailto:tri.pham@example.com"
                     className="hover:underline">
-                    your.email@example.com
+                    tri.pham@example.com
                   </a>
                 </p>
                 <p className="flex items-center gap-3">

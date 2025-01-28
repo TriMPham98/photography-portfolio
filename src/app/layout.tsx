@@ -6,9 +6,9 @@ import Navigation from "@/components/Navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Photography Portfolio",
+  title: "Tri Pham Photography",
   description:
-    "A modern photography portfolio showcasing beautiful moments captured through the lens",
+    "Professional photography portfolio of Tri Pham, capturing beautiful moments through the lens",
 };
 
 export default function RootLayout({

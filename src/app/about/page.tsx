@@ -42,10 +42,10 @@ export default function About() {
               The Story Behind the Lens
             </h2>
             <p>
-              Hello! I'm a passionate photographer with over 10 years of
-              experience capturing life's most precious moments. My journey in
-              photography began when I first picked up a camera in my teens, and
-              I've been in love with the art form ever since.
+              Hello! I'm Tri Pham, a passionate photographer with over 10 years
+              of experience capturing life's most precious moments. My journey
+              in photography began when I first picked up a camera in my teens,
+              and I've been in love with the art form ever since.
             </p>
             <p>
               I specialize in portrait and landscape photography, always

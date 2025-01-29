@@ -1,4 +1,54 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSubmitStatus({
+        type: "success",
+        message: "Message sent successfully! I will get back to you soon.",
+      });
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Failed to send message. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen py-16 px-4">
       <div className="max-w-4xl mx-auto">
@@ -12,7 +62,17 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
+            {submitStatus.type && (
+              <div
+                className={`p-4 rounded-lg ${
+                  submitStatus.type === "success"
+                    ? "bg-green-500/10 text-green-500"
+                    : "bg-red-500/10 text-red-500"
+                }`}>
+                {submitStatus.message}
+              </div>
+            )}
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
                 Name
@@ -52,8 +112,9 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full bg-white/10 text-white py-3 rounded-lg hover:bg-white/20 transition-colors">
-              Send Message
+              disabled={isSubmitting}
+              className="w-full bg-white/10 text-white py-3 rounded-lg hover:bg-white/20 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
           </form>
 

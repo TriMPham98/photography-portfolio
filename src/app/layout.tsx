@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import FooterWrapper from "@/components/FooterWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-black text-white`}>
+      <body
+        className={`${inter.className} bg-black text-white flex flex-col min-h-screen`}>
         <Navigation />
-        <main className="min-h-screen">{children}</main>
+        <main className="flex-grow">{children}</main>
+        <FooterWrapper />
       </body>
     </html>
   );

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -119,56 +121,59 @@ export default function Contact() {
           </form>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-12">
             <div>
-              <h3 className="text-xl font-semibold mb-4">
-                Contact Information
-              </h3>
-              <div className="space-y-4">
+              <h3 className="text-2xl font-normal mb-6">Contact Information</h3>
+              <div className="space-y-6">
                 <p className="flex items-center gap-3">
                   <span className="font-medium">Email:</span>
                   <a
                     href="mailto:tri.pham@example.com"
-                    className="hover:underline">
+                    className="hover:underline font-light">
                     tri.pham@example.com
                   </a>
                 </p>
                 <p className="flex items-center gap-3">
                   <span className="font-medium">Phone:</span>
-                  <a href="tel:+1234567890" className="hover:underline">
+                  <a
+                    href="tel:+1234567890"
+                    className="hover:underline font-light">
                     +1 (234) 567-890
                   </a>
                 </p>
                 <p className="flex items-center gap-3">
                   <span className="font-medium">Location:</span>
-                  <span>Your City, Country</span>
+                  <span className="font-light">Your City, Country</span>
                 </p>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4">Social Media</h3>
-              <div className="flex gap-4">
+              <h3 className="text-2xl font-normal mb-6">Connect With Me</h3>
+              <div className="flex gap-8">
                 <a
                   href="https://www.instagram.com/phamtriphoto/"
-                  className="hover:text-blue-500 transition-colors"
+                  className="text-2xl hover:text-blue-500 transition-colors"
                   target="_blank"
-                  rel="noopener noreferrer">
-                  Instagram
+                  rel="noopener noreferrer"
+                  aria-label="Instagram">
+                  <FaInstagram />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/pham-tri/"
-                  className="hover:text-blue-500 transition-colors"
+                  className="text-2xl hover:text-blue-500 transition-colors"
                   target="_blank"
-                  rel="noopener noreferrer">
-                  LinkedIn
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn">
+                  <FaLinkedinIn />
                 </a>
                 <a
                   href="https://x.com/PhamTriPhoto"
-                  className="hover:text-blue-500 transition-colors"
+                  className="text-2xl hover:text-blue-500 transition-colors"
                   target="_blank"
-                  rel="noopener noreferrer">
-                  X
+                  rel="noopener noreferrer"
+                  aria-label="X (formerly Twitter)">
+                  <FaXTwitter />
                 </a>
               </div>
             </div>
